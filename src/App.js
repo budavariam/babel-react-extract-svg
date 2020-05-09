@@ -1,12 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { logo as Logo } from "./assets/icons/logo" // BEFORE
+//import { logo as Logo } from './assets/generated-icons/logo.js'; // AFTER
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <Logo />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
